@@ -10,7 +10,11 @@ export default function Home({data}) {
       </Head>
       <h1>hi Ada</h1>
       <h1>Counter {data.counter}</h1>
-      <h1 className={styles.test}>Dummy {JSON.stringify(data.dummy)}</h1>
+      <h1 className='test'>Dummy {JSON.stringify(data.dummy)}</h1>
+      <h1 className={styles.test}>
+        <div>Hi</div>
+        <span className={styles.hello}>There</span>
+      </h1>
     </>
   )
 }
