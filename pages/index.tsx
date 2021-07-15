@@ -1,5 +1,7 @@
 import Head from 'next/head'
 
+import styles from '../styles/main.module.scss'
+
 export default function Home({data}) {
   return (
     <>
@@ -8,7 +10,7 @@ export default function Home({data}) {
       </Head>
       <h1>hi Ada</h1>
       <h1>Counter {data.counter}</h1>
-      <h1>Dummy {JSON.stringify(data.dummy)}</h1>
+      <h1 className={styles.test}>Dummy {JSON.stringify(data.dummy)}</h1>
     </>
   )
 }
