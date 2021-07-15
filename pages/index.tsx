@@ -5,8 +5,8 @@ import styles from '../styles/main.module.scss'
 export default function Home({data}) {
   return (
     <>
-      <Head>
-        <title>Kania codes blog</title>
+      {/* <Head>
+        <title>Kania Codes Blog</title>
       </Head>
       <h1>hi Ada</h1>
       <h1>Counter {data.counter}</h1>
@@ -14,7 +14,8 @@ export default function Home({data}) {
       <h1 className={styles.test}>
         <div>Hi</div>
         <span className={styles.hello}>There</span>
-      </h1>
+      </h1> */}
+      <h1>Work in progress</h1>
     </>
   )
 }
