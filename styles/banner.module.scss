@@ -1,0 +1,26 @@
+.banner {
+  width: 100%;
+  height: 30vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  box-shadow: 0px 2px 10px 1px #666666;
+  .logo {
+    position: absolute;
+    left: 6%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    color: white;
+    font-weight: 400;
+    span {
+      font-weight: 800;
+    }
+    .bottom {
+      font-size: 14px;
+      color: rgb(230, 230, 230);
+      font-weight: 400;
+    }
+  }
+}
