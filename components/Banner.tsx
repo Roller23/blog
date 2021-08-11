@@ -17,7 +17,9 @@ const Banner = (props: BannerProps) => {
         <div className={styles.bottom}>a programming blog</div>
       </div>
       <div className={styles.buttons}>
-        {props.links.map(link => <div className={styles.button}>{link.text}</div>)}
+        {props.links.map(link => {
+          return <a className={styles.button} href={link.link} key={link.text}>{link.text}</a>
+        })}
       </div>
     </div>
   );
