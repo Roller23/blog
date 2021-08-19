@@ -5,6 +5,9 @@ import Banner from '../components/Banner'
 import Footer from '../components/Footer'
 import LatestPost from '../components/LatestPost'
 
+import styles from '../styles/index.module.scss'
+import Post from '../components/Post'
+
 export default function Home({data}) {
   return (
     <>
@@ -31,6 +34,36 @@ export default function Home({data}) {
         date={Date.now()}
         background="https://vintagestores.com.ng/wp-content/uploads/2021/04/gPvyaz76tASn87RCGuSdDc.jpg"
       ></LatestPost>
+      <div className={styles.postsWrapper}>
+        <Post
+          title="The Engineer is a spy"
+          desc="And I cry when angels deserve to die"
+          link="#"
+          date={Date.now()}
+          background="https://d29rinwu2hi5i3.cloudfront.net/article_media/54609b66-bd7d-4153-9bda-750b2ffb2c78/06_cubase_midi.jpg"
+        ></Post>
+        <Post
+          title="Happy little bugs"
+          desc="You can make 'em wherever you want. It's your code"
+          link="#"
+          date={Date.now()}
+          background="https://fivethirtyeight.com/wp-content/uploads/2014/04/bob-ross.jpg?w=1024"
+        ></Post>
+        <Post
+          title="Wake me up"
+          desc="Before you go go"
+          link="#"
+          date={Date.now()}
+          background="https://miro.medium.com/max/1200/1*t5KNabwstG5jM4DuB3N7rQ.png"
+        ></Post>
+        <Post
+          title="I am hardcoded"
+          desc="Database coming soon baby"
+          link="#"
+          date={Date.now()}
+          background="https://lh3.googleusercontent.com/proxy/AX0zUA-JJ7Te2146G0sMYpMmHFXcY8vwaoP22HS7RmxUOjQV5e9LYc1TVDwEqUxvG_f0jJos0i0iOdz1qXvm3MltK5ztxJGa4m3Bid18GBLSVk-Fv7kdPAGAZtB9"
+        ></Post>
+      </div>
       <Footer copyright="Copyright Wiktor Kania ©"></Footer>
     </>
   )
