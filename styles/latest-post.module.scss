@@ -1,10 +1,14 @@
+@import 'variables';
+
 .post {
   position: relative;
-  width: 100%;
+  width: calc(100% - 2 * #{$postGap});
   height: 80vh;
   overflow: hidden;
   display: block;
   text-decoration: none;
+  border-radius: 5px;
+  margin: $postGap;
   .background {
     position: absolute;
     background-size: cover;
@@ -44,6 +48,7 @@
       left: 5%;
       padding-left: 15px;
       border-left: 3px solid white;
+      border-radius: 3px;
       .title {
         font-size: 40px;
         font-weight: bold;

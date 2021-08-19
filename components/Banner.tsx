@@ -13,7 +13,7 @@ const Banner = (props: BannerProps) => {
   return (
     <div className={styles.banner}>
       <div className={styles.logo}>
-        kania<span>.codes</span>
+        {'>'} kania<span className={styles.codes}>.codes</span><span className={styles.dash}>_</span>
         <div className={styles.bottom}>a programming blog</div>
       </div>
       <div className={styles.buttons}>
