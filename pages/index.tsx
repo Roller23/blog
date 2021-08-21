@@ -61,7 +61,7 @@ export default function Home({data}) {
           desc="Database coming soon baby"
           link="#"
           date={Date.now()}
-          background="https://lh3.googleusercontent.com/proxy/AX0zUA-JJ7Te2146G0sMYpMmHFXcY8vwaoP22HS7RmxUOjQV5e9LYc1TVDwEqUxvG_f0jJos0i0iOdz1qXvm3MltK5ztxJGa4m3Bid18GBLSVk-Fv7kdPAGAZtB9"
+          background="https://hassancorrigan.com/static/4f9e4d81dd3f2d4c1a39d6ee27bbf002/ace28/nextjs-back-button.jpg"
         ></Post>
       </div>
       <Footer copyright="Copyright Wiktor Kania ©"></Footer>
