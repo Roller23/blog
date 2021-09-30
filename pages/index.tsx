@@ -34,7 +34,7 @@ export default function Home({data}) {
         desc="Some clever description"
         link="#"
         date={Date.now()}
-        background="https://vintagestores.com.ng/wp-content/uploads/2021/04/gPvyaz76tASn87RCGuSdDc.jpg"
+        background="https://rapidfix4you.co.uk/wp-content/uploads/2020/07/macbook-air.jpg"
       ></LatestPost>
       <div className={styles.postsWrapper}>
         <Post
