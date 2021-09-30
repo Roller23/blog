@@ -8,6 +8,8 @@ import LatestPost from '../components/LatestPost'
 import styles from '../styles/index.module.scss'
 import Post from '../components/Post'
 
+import { getBlogDb } from '../util/mongodb/mongodb'
+
 export default function Home({data}) {
   return (
     <>
@@ -69,10 +71,15 @@ export default function Home({data}) {
   )
 }
 
-// export async function getServerSideProps() {
-//   return {
-//     props: {
-//       data: {}
-//     }
-//   }
-// }
+export async function getServerSideProps() {
+  const {db, err} = await getBlogDb()
+  let articles = []
+  if (!err) {
+    articles = await db.collection('articles').find({}).toArray()
+  }
+  return {
+    props: {
+      data: {articles}
+    }
+  }
+}
