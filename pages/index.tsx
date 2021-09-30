@@ -74,7 +74,9 @@ export default function Home({data}) {
 export async function getServerSideProps() {
   const {db, err} = await getBlogDb()
   let articles = []
-  if (!err) {
+  if (err) {
+    console.log('An error occured with connecting to db', err)
+  } else {
     articles = await db.collection('articles').find({}).toArray()
   }
   return {
