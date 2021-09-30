@@ -60,7 +60,7 @@ export default function Home({data}) {
         ></Post>
         <Post
           title="I am hardcoded"
-          desc="Database coming soon baby"
+          desc="Will be stored in MongoDB soon"
           link="#"
           date={Date.now()}
           background="https://hassancorrigan.com/static/4f9e4d81dd3f2d4c1a39d6ee27bbf002/ace28/nextjs-back-button.jpg"
